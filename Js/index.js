@@ -83,8 +83,10 @@ function mostrarLibrosSegunCategoria(Categoria) {
             LIBROSFILTRADOS.push(LIBROS[i])
         }
     }
-
     return LIBROSFILTRADOS
 
-
 }
+
+const CATEGORIAELEGIDA ="infantil";
+const RESULTADO =LIBROSFILTRADOS (Categoria);
+console.log (RESULTADO)
