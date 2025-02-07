@@ -31,14 +31,14 @@ const LIBROS = [{
     id: 2,
     Titulo: "Antología poética ",
     Autor: "Mario Benedetti",
-    categoria: "Juveniles",
+    categoria: "Juvenil",
 },
 
 {
     id: 3,
     Titulo: "Harry Potter y la piedra Filosofal",
     Autor: "J.K. Rowling",
-    categoria: "Juveniles",
+    categoria: "Juvenil",
 },
 
 {
@@ -74,11 +74,11 @@ const LIBROS = [{
 ]
 console.log(LIBROS)
 
-function mostrarLibrosSegunCategoria(Categoria) {
+function mostrarLibrosSegunCategoria(categoria) {
     const LIBROSFILTRADOS = [];
 
     for (let i = 0; i < LIBROS.length; i++) {
-        if (LIBROS[i].Categoria === categoria)
+        if (LIBROS[i].categoria === categoria)
         {
             LIBROSFILTRADOS.push(LIBROS[i])
         }
@@ -87,5 +87,5 @@ function mostrarLibrosSegunCategoria(Categoria) {
 
 }
 
-const RESULTADO =mostrarLibrosSegunCategoria (Categoria);
+const RESULTADO =mostrarLibrosSegunCategoria (categoria);
 console.log (RESULTADO)
