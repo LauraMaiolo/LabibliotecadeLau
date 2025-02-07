@@ -24,35 +24,35 @@ const LIBROS = [{
     id: 1,
     Titulo: "Autobiografía de un Yogui",
     Autor: "Paramahansa Yogananda",
-    Categoria: "Adultos",
+    categoria: "Adultos",
 },
 
 {
     id: 2,
     Titulo: "Antología poética ",
     Autor: "Mario Benedetti",
-    Categoria: "Juveniles",
+    categoria: "Juveniles",
 },
 
 {
     id: 3,
     Titulo: "Harry Potter y la piedra Filosofal",
     Autor: "J.K. Rowling",
-    Categoria: "Juveniles",
+    categoria: "Juveniles",
 },
 
 {
     id: 4,
     Titulo: "El hombre rebelde",
     Autor: "Albert Camus",
-    Categoria: "Adultos",
+    categoria: "Adultos",
 },
 
 {
     id: 5,
     Titulo: "Amigos por el viento",
     Autor: "Liliana Bodoc",
-    Categoria: "Infantil",
+    categoria: "Infantil",
 },
 
 
@@ -60,14 +60,14 @@ const LIBROS = [{
     id: 6,
     Titulo: "El hombre en busca de sentido",
     Autor: "Viktor Frankl",
-    Categoria: "Adultos",
+    categoria: "Adultos",
 },
 
 {
     id: 7,
     Titulo: "Manuelita ¿Dónde vas?",
     Autor: "María Elena Walsh",
-    Categoria: "Infantil",
+    categoria: "Infantil",
 }
 
 
@@ -78,7 +78,7 @@ function mostrarLibrosSegunCategoria(Categoria) {
     const LIBROSFILTRADOS = [];
 
     for (let i = 0; i < LIBROS.length; i++) {
-        if (LIBROS[i].Categoria === "Infantil");
+        if (LIBROS[i].Categoria === categoria)
         {
             LIBROSFILTRADOS.push(LIBROS[i])
         }
@@ -87,6 +87,5 @@ function mostrarLibrosSegunCategoria(Categoria) {
 
 }
 
-const CATEGORIAELEGIDA ="infantil";
-const RESULTADO =LIBROSFILTRADOS (Categoria);
+const RESULTADO =mostrarLibrosSegunCategoria (Categoria);
 console.log (RESULTADO)
