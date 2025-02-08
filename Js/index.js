@@ -1,5 +1,5 @@
 let nombre = prompt("¡Hola! ¿Cuál es tu nombre?");
-let correoElectrónico = prompt("Si tenés ingresa tu casilla de correo electrónico");
+let correoElectrónico = prompt("Si tenés, ingresa tu casilla de correo electrónico");
 let edad = parseInt(prompt("¿Qué edad tenés?"))
 
 let categoria;
@@ -78,14 +78,19 @@ function mostrarLibrosSegunCategoria(categoria) {
     const LIBROSFILTRADOS = [];
 
     for (let i = 0; i < LIBROS.length; i++) {
-        if (LIBROS[i].categoria === categoria)
-        {
+        if (LIBROS[i].categoria === categoria) {
             LIBROSFILTRADOS.push(LIBROS[i])
         }
     }
     return LIBROSFILTRADOS
 
 }
+mostrarLibrosSegunCategoria()
+console.log(mostrarLibrosSegunCategoria(categoria));
 
-const RESULTADO =mostrarLibrosSegunCategoria (categoria);
-console.log (RESULTADO)
+// const RESULTADO = mostrarLibrosSegunCategoria(categoria);
+// console.log(RESULTADO) (este va porque no me imprimia en consola mi function)
+
+
+
+
