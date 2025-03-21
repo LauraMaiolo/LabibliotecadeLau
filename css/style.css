@@ -1,0 +1,1887 @@
+/* ROOT DE COLORES ENCRIPTADOR */
+:root {
+    --light-blue-100: hsla(227, 60%, 97%, 1);
+    --dark-blue-300: hsl(215, 75%, 25%);
+    --white: hsla(0, 0%, 100%, 1);
+    --gray-500: hsla(210, 10%, 23%, 1);
+    --decoder-btn: hsla(214, 26%, 88%, 1);
+    --gray-400: hsla(210, 9%, 31%, 1);
+}
+
+/* reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',
+        sans-serif;
+    font-family: 'Kanit',
+        sans-serif;
+    font-family: 'Ubuntu',
+        sans-serif;
+}
+
+.main {
+    min-height: 100%;
+}
+
+.fondo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+
+.index-fondo {
+    background-image: url(../img/work-play.jpg);
+}
+
+/* ADIVINADOR */
+.adivinador-fondo {
+    background-image: url("../img/adivinador/fondoAdivinador.jpg");
+}
+
+/* MEMOTEST */
+.memotest-fondo {
+    background-image: url("../img/memotest/fondoTexturaGris.jpg");
+}
+
+/* ENCRIPTADOR */
+
+.encriptador-fondo {
+    background-image: url("../img/encriptador/encriptador-fondo.jpg");
+}
+
+/* AHORCADO */
+
+.ahorcado-fondo {
+    background-image: url("../img/ahorcado/fondo.png");
+
+}
+
+/* RANKING */
+.ranking-fondo {
+    background-image: url("../img/ranking/fondoRanking.jpg");
+}
+
+/* HEADER Y NAV */
+.header {
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-texto {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* INDEX */
+
+.index-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #cccccc;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card-index {
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 350px;
+    background-color: #f7f5f7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.card-index__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0c0c0c;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card-index__img {
+    position: absolute;
+    top: 50px;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+.card-index__p {
+    position: absolute;
+    top: 58%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #070707;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-jugar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #0c0c0c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.btn-jugar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+/* ADIVINADOR */
+
+.adivinador-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.adivinador {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 12% 0;
+}
+
+.btn-inicioAdivinador {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    background-color: #b30ce6;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.adivinador-input {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 12% 0;
+    display: none;
+    transition: all 0.
+}
+
+.adivinadorNumber-input {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #a217de;
+    resize: none;
+    outline: none;
+    background-color: #f7f5f7;
+    padding: 10px;
+}
+
+.adivinador-input p {
+    position: relative;
+    font-size: 1.5rem;
+    color: #fff;
+    bottom: 9rem;
+    padding: 1rem;
+}
+
+
+.adivinador-resultado {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 12% 0;
+    display: none;
+    transition: all 0.5s;
+}
+
+.resultado-Adivinador p {
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.show {
+    display: flex;
+}
+
+/* MEMOTEST */
+.header__title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #cccccc;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.memotest-main,
+.puntuacion-memotest {
+    text-align: center;
+    color: #fff;
+}
+
+.grilla-memotest {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+    height: 450px;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.grilla-memotest img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+.puntuacion-memotest {
+    margin: 20px;
+    padding: 20px;
+}
+
+.puntuacion-memotest h3 span {
+    margin: 5px;
+    color: rgb(201, 186, 242);
+}
+
+/* ENCRIPTADOR */
+.encriptador-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    font-family: 'Ubuntu',
+        sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #cccccc;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.text-inputUsuarioEncrip {
+    width: 60%;
+    padding: 16px;
+    height: 500px;
+    margin: 0 auto;
+    border: none;
+    resize: none;
+}
+
+.text-inputUsuarioEncrip,
+.text-inputUsuarioEncrip::placeholder {
+    color: var(--dark-blue-300);
+}
+
+.text-advertenciaEncrip {
+    color: #f7f5f7;
+    font-size: 16px;
+}
+
+.btn {
+    border-radius: 10px;
+    font-size: 24px;
+    width: 15.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid var(--dark-blue-300);
+
+}
+
+.btn-encriptar {
+    background-color: var(--dark-blue-300);
+    color: var(--light-blue-100)
+}
+
+.btn-desencriptar {
+    background-color: var(--decoder-btn);
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+}
+
+.text-output-sectionEncrip {
+    position: absolute;
+    background-color: #fff;
+    width: 30%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    top: 60px;
+    right: 60px;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 50%);
+}
+
+
+.text-outputUsuarioEncrip {
+    width: 100%;
+    height: 500px;
+    padding: 16px;
+    background-color: #fff;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.mostrarMensajeVacioEncrip {
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    width: 90%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.mostrarMensajeVacioEncrip h3,
+p {
+    color: var(--dark-blue-300);
+    font-size: 24px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.mostrarMensajeVacioEncrip h3 {
+    font-weight: 700;
+}
+
+.ilustracionEncrip {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+}
+
+
+.ocultarMensajeVacioEncrip {
+    display: none;
+}
+
+.ocultarBtnCopiarEncrip {
+    display: none;
+    background: transparent;
+    color: var(--dark-blue-300);
+    border: 1px solid var(--dark-blue-300);
+    margin: 15px auto;
+}
+
+.text-footerEncrip {
+    height: 50px;
+    display: flex;
+    bottom: 0;
+    font-size: 16px;
+    color: var(--dark-blue-300);
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text-footerEncrip a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--dark-blue-300);
+}
+
+/* AHORCADO */
+.audio-ahorcado {
+    display: none;
+}
+
+.inicio-ahorcado {
+    text-align: center;
+}
+
+.imagen-ahorcado {
+    filter: drop-shadow(2px 2px 2px black);
+    margin-left: 6px;
+}
+
+
+.titulo-ahorcado {
+    width: 300px;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px 4px black;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 15px;
+    position: absolute;
+}
+
+.subtitulo-ahorcado {
+    width: 100%;
+    font-family: 'Playfair Display', sans-serif;
+    text-shadow: 2px 2px 3px black;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.instrucciones-ahorcado {
+    width: 50%;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.p-ahorcado {
+    color: white;
+    margin: auto;
+}
+
+.contenedor-ahorcado {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.panel-botones-ahorcado {
+    padding-top: 20px;
+
+}
+
+.btn-ahorcado {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 16px;
+    font-family: 'Ubuntu',
+        ui-sans-serif;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    margin: 0 15px;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.btn-ahorcado:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+
+@keyframes ani {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.btn-ahorcado:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+.btn-ahorcado:hover::before {
+    filter: blur(20px);
+}
+
+.btn-ahorcado:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+.juego-iniciado {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 16px;
+    font-family: 'Ubuntu',
+        ui-sans-serif;
+    color: rgb(104, 96, 96);
+    width: 9em;
+    height: 3em;
+    margin: 0 15px;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(50deg, #fefefe, #000000);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.invisible-ahorcado {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.visible-ahorcado {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.input_newPalabra-ahorcado {
+    width: 250px;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.contenedor-dibujo-ahorcado {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    width: 80%;
+    height: 500px;
+    margin: 20px auto;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image-ahorcado {
+    width: 250px;
+}
+
+.teclado-ahorcado {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.letra-ahorcado {
+    font-family: "Ubuntu",
+        sans-serif;
+    font-size: 30px;
+    color: #f8f9fa;
+    width: 32px;
+    height: 30px;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(100deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 200%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.letra-usada {
+    font-family: "Ubuntu",
+        sans-serif;
+    font-size: 30px;
+    color: #f8f9fa;
+    width: 32px;
+    height: 30px;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(50deg, #fefefe, #000000);
+    background-size: 200%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.palabra-a-adivinar-ahorcado {
+    min-width: max-content;
+    display: inline-block;
+    font-size: 36px;
+}
+
+
+.palabra-a-adivinar-ahorcado span {
+    color: #126bc4;
+    font-family: "Ubuntu",
+        sans-serif;
+    font-size: 36px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* RANKING STAR */
+.ranking-star {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.star-style {
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    padding-right: 2px;
+}
+
+.star-container span {
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mostrar-valorStar {
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* RANKING */
+
+.ranking-fondo {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0c0c0c;
+
+}
+
+.header__title-ranking {
+    font-family: 'Inter',
+        sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.ranking-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ranking {
+    font-family: 'Inter',
+        sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card-puntaje {
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 400px;
+    background-color: #f7f5f7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title__puntaje {
+
+    color: #0c0c0c;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.card-title__puntaje {
+
+    color: #0c0c0c;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.img-puntaje {
+    position: absolute;
+    top: 50px;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+.h4-puntaje {
+    position: relative;
+    top: 8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.p-puntaje {
+    position: absolute;
+    top: 20rem;
+    align-self: center;
+    font-size: 1.5rem;
+    color: black;
+    margin: 0 15%;
+}
+
+.btn-puntaje {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+}
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    width: 95%;
+    height: 60px;
+    background: transparent;
+    padding: 20px;
+    font-size: 1rem;
+    color: #fff;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.footer-encriptador {
+    position: relative;
+}
+
+footer p,
+a {
+    font-size: 1rem;
+    color: #fff;
+}
+
+@media screen and (max-width:320px) {
+
+    /* INDEX */
+    .main-title {
+        font-size: 2rem;
+    }
+
+    /* ADIVINADOR */
+    .main-adivinador {
+        min-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .adivinador-input p {
+        font-size: 1rem;
+        top: 8rem;
+    }
+
+    .resultado-Adivinador p {
+        font-size: 1.5rem;
+    }
+
+    /* MEMOTEST */
+
+    .grilla-memotest {
+        min-height: 100%;
+        position: relative;
+        top: 26rem;
+        max-width: 320px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    .memotest-container {
+        display: flex;
+        position: absolute;
+        height: 100vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+
+    /* ENCRIPTADOR */
+
+
+    .text-inputUsuarioEncrip {
+        width: 100%;
+        height: 200px
+    }
+
+    .text-output-sectionEncrip {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        right: 0;
+    }
+
+    .btn {
+        font-size: 1rem;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text-outputUsuarioEncrip {
+        width: 100%;
+        height: 250px;
+        padding: 16px;
+        margin: 0;
+    }
+
+    .mostrarMensajeVacioEncrip {
+        position: relative;
+        width: 90%;
+        height: 350px;
+        margin: 0 auto;
+    }
+
+    .ilustracionEncrip {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .mostrarMensajeVacioEncrip h3,
+    p {
+        font-size: 20px;
+        background-color: transparent;
+        text-align: center;
+    }
+
+
+    .ocultarBtnCopiarEncrip {
+        margin: 0 auto;
+    }
+
+    /* AHORCADO */
+    .p-ahorcado {
+        max-width: 100%;
+    }
+
+    .panel-botones-ahorcado {
+        padding-top: 20px;
+
+    }
+
+    .btn-ahorcado,
+    .juego-iniciado {
+        margin: 10px auto;
+    }
+
+    .contenedor-dibujo-ahorcado {
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+        width: 90%;
+        min-height: 620px;
+        margin: 0 auto;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.5);
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-ahorcado {
+        width: 200px;
+    }
+
+    .teclado-ahorcado {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .letra-ahorcado {
+        font-size: 1.2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 2px;
+        padding: 20px;
+
+    }
+
+    .letra-usada {
+        font-size: 1.2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 2px;
+        padding: 20px;
+    }
+
+    /* RANKING STAR */
+
+    .star-encriptador,
+    .star-memotest {
+        display: none;
+    }
+
+    /* RANKING */
+
+    .ranking-fondo {
+        width: 100vw;
+        height: 100vh;
+        background-color: #0c0c0c;
+
+    }
+
+    .header__title-ranking {
+        font-family: 'Inter',
+            sans-serif;
+        color: #fff;
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    .ranking-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .ranking {
+        font-family: 'Inter',
+            sans-serif;
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card-puntaje {
+        width: 200px;
+        height: 350px;
+        margin: 10px;
+    }
+
+    .card-title__puntaje {
+
+        color: #0c0c0c;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .card-title__puntaje {
+
+        color: #0c0c0c;
+        font-size: 1rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .img-puntaje {
+        position: absolute;
+        top: 50px;
+        width: 100px;
+        height: 100px;
+        align-self: center;
+    }
+
+    .h4-puntaje {
+        position: relative;
+        top: 8rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .p-puntaje {
+        position: absolute;
+        top: 17rem;
+        align-self: center;
+        font-size: 1rem;
+        color: black;
+        margin: 0 15%;
+    }
+
+    .btn-puntaje {
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        bottom: 0;
+        left: 0;
+        height: 40px;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    }
+
+    /* FOOTER */
+    .footer-encriptador {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        flex-direction: row;
+        bottom: -4rem;
+    }
+
+    .footer-encriptador__a {
+        color: #000000;
+    }
+
+    .footer-memotest {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    footer p,
+    a {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (min-width: 321px) and (max-width:480px) {
+
+    /* INDEX */
+    .main-title {
+        font-size: 2rem;
+    }
+
+    /* ADIVINADOR */
+    .main-adivinador {
+        min-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .adivinador-input p {
+        font-size: 1rem;
+        top: 8rem;
+    }
+
+    .resultado-Adivinador p {
+        font-size: 1.5rem;
+    }
+
+    /* MEMOTEST */
+    .grilla-memotest {
+        min-height: 100%;
+        position: relative;
+        top: 0rem;
+        max-width: 480px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    .memotest-container {
+        display: flex;
+        position: absolute;
+        height: 100vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+
+    /* ENCRIPTADOR */
+
+
+    .text-inputUsuarioEncrip {
+        width: 100%;
+        height: 200px
+    }
+
+    .text-output-sectionEncrip {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        right: 0;
+    }
+
+    .btn {
+        font-size: 1rem;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text-outputUsuarioEncrip {
+        width: 100%;
+        height: 250px;
+        padding: 16px;
+        margin: 0;
+    }
+
+    .mostrarMensajeVacioEncrip {
+        position: relative;
+        width: 90%;
+        height: 350px;
+        margin: 0 auto;
+    }
+
+    .ilustracionEncrip {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .mostrarMensajeVacioEncrip h3,
+    p {
+        font-size: 20px;
+        background-color: transparent;
+        text-align: center;
+    }
+
+
+    .ocultarBtnCopiarEncrip {
+        margin: 0 auto;
+    }
+
+    /* AHORCADO */
+    .p-ahorcado {
+        max-width: 100%;
+    }
+
+    .panel-botones-ahorcado {
+        padding-top: 20px;
+
+    }
+
+    .btn-ahorcado,
+    .juego-iniciado {
+        margin: 10px auto;
+    }
+
+    .contenedor-dibujo-ahorcado {
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+        width: 90%;
+        min-height: 620px;
+        margin: 0 auto;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-ahorcado {
+        width: 200px;
+    }
+
+    .teclado-ahorcado {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .letra-ahorcado {
+        font-size: 1.2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 2px;
+        padding: 20px;
+
+    }
+
+    .letra-usada {
+        font-size: 1.2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 2px;
+        padding: 20px;
+    }
+
+    /* RANKING STAR */
+
+
+
+    .ranking-star {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        height: 12%;
+    }
+
+    .star-encriptador {
+        display: none;
+    }
+
+    /* RANKING */
+
+    .ranking-fondo {
+        width: 100vw;
+        height: 100vh;
+        background-color: #0c0c0c;
+
+    }
+
+    .header__title-ranking {
+        font-family: 'Inter',
+            sans-serif;
+        color: #fff;
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    .ranking-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .ranking {
+        font-family: 'Inter',
+            sans-serif;
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card-puntaje {
+        position: relative;
+        display: flex;
+        width: 250px;
+        height: 400px;
+        background-color: #f7f5f7;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+        margin: 20px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-title__puntaje {
+
+        color: #0c0c0c;
+        font-size: 2rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .card-title__puntaje {
+
+        color: #0c0c0c;
+        font-size: 2rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .img-puntaje {
+        position: absolute;
+        top: 50px;
+        width: 150px;
+        height: 150px;
+        align-self: center;
+    }
+
+    .h4-puntaje {
+        position: relative;
+        top: 8rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .p-puntaje {
+        position: absolute;
+        top: 20rem;
+        align-self: center;
+        font-size: 1.5rem;
+        color: black;
+        margin: 0 15%;
+    }
+
+    .btn-puntaje {
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        bottom: 0;
+        left: 0;
+        height: 40px;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    }
+
+    /* FOOTER */
+    footer {
+        position: relative;
+    }
+
+    footer p,
+    a {
+        font-size: 0.8rem;
+    }
+
+    .footer-encriptador {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        flex-direction: row;
+        bottom: -4rem;
+    }
+
+    .footer-encriptador__a {
+        color: #000000;
+    }
+
+    .footer-memotest {
+        position: absolute;
+        bottom: -36rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 850px) {
+
+
+    /* INDEX */
+    .main-title {
+        font-size: 2rem;
+    }
+
+    /* ADIVINADOR */
+    .main-adivinador {
+        min-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .adivinador-input p {
+        font-size: 1rem;
+        top: 8rem;
+    }
+
+    .resultado-Adivinador p {
+        font-size: 1.5rem;
+    }
+
+    /* MEMOTEST */
+    .grilla-memotest {
+        width: 100%;
+        position: relative;
+        top: 0rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .memotest-container {
+        display: flex;
+        position: absolute;
+        height: 100vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    /* ENCRIPTADOR */
+
+    .text-inputUsuarioEncrip {
+        width: 100%;
+        height: 200px
+    }
+
+    .text-output-sectionEncrip {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        right: 0;
+    }
+
+    .btn {
+        margin: 5px 14%;
+        font-size: 1.5rem;
+        width: 75%;
+        padding: 10px;
+    }
+
+    .text-outputUsuarioEncrip {
+        width: 90%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .mostrarMensajeVacioEncrip {
+        position: relative;
+        width: 90%;
+
+        margin: 0 auto;
+    }
+
+    .ilustracionEncrip {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .mostrarMensajeVacioEncrip h3,
+    p {
+        font-size: 20px;
+        background-color: transparent;
+        text-align: center;
+    }
+
+
+    .ocultarBtnCopiarEncrip {
+        margin: 0 auto;
+    }
+
+    /* AHORCADO */
+    .p-ahorcado {
+        max-width: 100%;
+    }
+
+    .btn-ahorcado,
+    .juego-iniciado {
+        margin: 10px;
+    }
+
+    .contenedor-dibujo-ahorcado {
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+        width: 90%;
+        min-height: 500px;
+        margin: 0 auto;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.5);
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-ahorcado {
+        width: 250px;
+    }
+
+    .teclado-ahorcado {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .letra-ahorcado {
+        font-size: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        margin: 2px;
+        padding: 20px;
+
+    }
+
+    .letra-usada {
+        font-size: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        margin: 5px;
+        padding: 20px;
+    }
+
+    /* RANKING STAR */
+    .ranking-star {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        height: 12%;
+    }
+
+    .star-encriptador {
+        height: 50%;
+        width: 50%;
+        display: flex;
+        bottom: -3rem;
+        left: 0rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* RANKING */
+
+    .ranking-fondo {
+        width: 100vw;
+        height: 100vh;
+        background-color: #0c0c0c;
+
+    }
+
+    .header__title-ranking {
+        font-family: 'Inter',
+            sans-serif;
+        color: #fff;
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    .ranking-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .ranking {
+        font-family: 'Inter',
+            sans-serif;
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card-puntaje {
+        position: relative;
+        display: flex;
+        width: 250px;
+        height: 400px;
+        background-color: #f7f5f7;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+        margin: 20px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-title__puntaje {
+
+        color: #0c0c0c;
+        font-size: 2rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .card-title__puntaje {
+
+        color: #0c0c0c;
+        font-size: 2rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .img-puntaje {
+        position: absolute;
+        top: 50px;
+        width: 150px;
+        height: 150px;
+        align-self: center;
+    }
+
+    .h4-puntaje {
+        position: relative;
+        top: 8rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .p-puntaje {
+        position: absolute;
+        top: 20rem;
+        align-self: center;
+        font-size: 1.5rem;
+        color: black;
+        margin: 0 15%;
+    }
+
+    .btn-puntaje {
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        bottom: -5px;
+        left: -35px;
+        height: 41px;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    }
+
+    /* FOOTER */
+    footer {
+        position: relative;
+    }
+
+    footer p,
+    a {
+        font-size: 0.8rem;
+    }
+
+    .footer-encriptador {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        bottom: 0;
+        left: 0;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .footer-memotest {
+        position: relative;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    /* AHORCADO */
+    .p-ahorcado {
+        max-width: 100%;
+    }
+
+    .btn-ahorcado,
+    .juego-iniciado {
+        margin: 10px;
+    }
+
+    .contenedor-dibujo-ahorcado {
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+        width: 90%;
+        min-height: 500px;
+        margin: 5px auto;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.5);
+        flex-flow: row wrap;
+        place-content: flex-start center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .image-ahorcado {
+        width: 250px;
+    }
+
+    .teclado-ahorcado {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .letra-ahorcado {
+        font-size: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        margin: 2px;
+        padding: 20px;
+
+    }
+
+    .letra-usada {
+        font-size: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        margin: 5px;
+        padding: 20px;
+    }
+}

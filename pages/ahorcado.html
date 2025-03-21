@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/play.png" type="image/x-icon">
+    <!-- Boostrap 5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kanit&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Ahorcado</title>
+</head>
+
+<body>
+    <div class="container-fluid fondo ahorcado-fondo">
+        <header class="d-flex align-items-center justify-content-center header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="./adivinador.html">Adivinador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./memotest.html">Memotest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./encriptador.html">Encriptador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./ahorcado.html">Ahorcado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./ranking.html">Ranking</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <audio class="audio-ahorcado" id="audio1" controls>
+                <source type="audio/mp3" src="../assets/sonidosAhorcado/sfxboing.mp3">
+            </audio>
+            <audio class="audio-ahorcado" id="audio2" controls>
+                <source type="audio/mp3" src="../assets/sonidosAhorcado/sfxpop.mp3">
+            </audio>
+            <audio class="audio-ahorcado" id="audio3" controls>
+                <source type="audio/mp3" src="../assets/sonidosAhorcado/sfx-piano-fantasia2.mp3">
+            </audio>
+            <audio class="audio-ahorcado" id="audio4" controls>
+                <source type="audio/mp3" src="../assets/sonidosAhorcado/sfx-piano-mystery.mp3">
+            </audio>
+            <div id="inicio" class="inicio-ahorcado">
+                <div id="titulo">
+                    <img class="imagen-ahorcado" width="65" heigth="65" src="../img/ahorcado/horca4.png">
+                    <h1 class="titulo-ahorcado">LA H&nbsp;&nbsp;&nbsp;&nbsp;RCA</h1>
+                </div>
+                <div id="subtitulo">
+                    <h2 class="subtitulo-ahorcado">¡Descubre la palabra escondida y salvate de tu destino!</h2>
+                    <p id="instrucciones" class="p-ahorcado instrucciones-ahorcado">¡Agrega nuevas palabras!<br>Las
+                        mismas pueden
+                        tener entre 3 y
+                        17 letras. Puedes agregar frases. Luego presioná "Enter".<br>
+                        No se aceptan números ni caracteres especiales.</p>
+                </div>
+            </div>
+            <div class="contenedor-ahorcado">
+                <div class="panel-botones-ahorcado">
+                    <button id="jugar" class="btn-ahorcado">Iniciar juego</button>
+                    <button id="agregar" class="btn-ahorcado">Agregar palabra</button>
+                    <input type="text" class="form-control input_newPalabra-ahorcado invisible-ahorcado"
+                        placeholder="Añadir palabra" id="input">
+                </div>
+                <div class="contenedor-dibujo-ahorcado">
+                    <img id="imagen" class="image-ahorcado" src="../img/ahorcado/img0.png">
+                    <p id="palabra-a-adivinar" class="palabra-a-adivinar-ahorcado"></p>
+
+                    <!-- <p id_="resultado" class="resultado-ahorcado"></p> -->
+                    <div class="teclado-ahorcado" id="teclado"></div>
+                </div>
+            </div>
+
+            <section class="ranking-star">
+                <div class="star-container" id="stars"><span>Puntuame: </span></div>
+                <div class="mostrar-valorStar" id="star-valor"></div>
+            </section>
+            <section style="display: none">
+        </main>
+        <footer>
+            <p>&copy; Copyright 2025
+            </p>
+        </footer>
+
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+        <!--SweetAlert  -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.16/dist/sweetalert2.all.min.js"></script>
+        <!--Toastify -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <!-- Mis scripts -->
+        <script src="../js/star-ranking.js"></script>
+        <script src="../js/ahorcado.js"></script>
+
+</body>
+
+</html>

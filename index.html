@@ -3,17 +3,109 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La biblio de Lau</title>
+    <link rel="shortcut icon" href="./img/play.png" type="image/x-icon">
+    <!-- Boostrap 5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kanit&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Juegos Interactivos</title>
 </head>
-<h1>Bienvenido/a a la biblioteca de Lau</h1>
-<p>Espero que te gusten y disfrutes tu próxima lectura</p>
-<button>Consultá por tu libro</button>
-<button>Te lo presto y disfrutalo</button>
+
 <body>
-    <script src="./Js/index.js"></script>
+    <div class="h-100 container-fluid index-fondo fondo ">
+        <header class="d-flex align-items-center justify-content-center header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " href="./pages/adivinador.html">Adivinador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/memotest.html">Memotest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/encriptador.html">Encriptador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/ahorcado.html">Ahorcado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/ranking.html">Ranking</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="row">
+            <h1 class="main-title"> Juegos Interactivos </h1>
+            <div class="index-main">
+                <section>
+                    <div class="card-index">
+                        <h2 class="card-index__title"> Adivinador </h2>
+                        <img class="card-index__img" src="./img/adivinador/giphy-Adivinador.gif">
+                        <p class="card-index__p">¿Sos capaz de adivinar el numero que piensa la máquina?</p>
+                        <button class="btn-jugar"><a href="./pages/adivinador.html">Jugar</a></button>
+                    </div>
+                </section>
+                <section>
+                    <div class="card-index">
+                        <h2 class="card-index__title"> Memotest </h2>
+                        <img class="card-index__img" src="./img/memotest/giphy-memotest.gif">
+                        <p class=" card-index__p">¿Cómo está tu memoria?</p>
+                        <button class="btn-jugar"><a href="./pages/memotest.html">Jugar</a></button>
+                    </div>
+                </section>
+                <section>
+                    <div class="card-index">
+                        <h2 class="card-index__title"> Encriptador </h2>
+                        <img class="card-index__img" src="./img/encriptador/giphy-encriptador.gif">
+                        <p class="card-index__p">¿Querés mandar un mensaje secreto?</p>
+                        <button class="btn-jugar"><a href="./pages/encriptador.html">Jugar</a></button>
+                    </div>
+                </section>
+                <section>
+                    <div class="card-index">
+                        <h2 class="card-index__title"> Ahorcado </h2>
+                        <img class="card-index__img" src="./img/ahorcado/giphy-ahorcado.gif">
+                        <p class="card-index__p">¿Jugamos al ahorcado?</p>
+                        <button class="btn-jugar"><a href="./pages/ahorcado.html">Jugar</a></button>
+                    </div>
+                </section>
+                <section>
+                    <div class="card-index">
+                        <h2 class="card-index__title"> Ranking </h2>
+                        <img class="card-index__img" src="./img/ranking/giphy-ranking.gif">
+                        <p class="card-index__p">¿Querés puntuar un juego?</p>
+                        <button class="btn-jugar"><a href="./pages/ranking.html">Jugar</a></button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer-index">
+            <p>&copy; Copyright 2025
+            </p>
+        </footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
-
-
 
 </html>
